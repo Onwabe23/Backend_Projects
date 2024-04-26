@@ -63,7 +63,7 @@ app.post('/register', async (req,res)=>{
         res.render('home',{ 
             name: applicant.name, studentNumber: applicant.studentNumber,
              idNumber:applicant.idNumber,asp:applicant.asp,education:applicant.education,
-            Course: applicant.Course,surname: applicant.surname,title:applicant.tile,certificateCopy: applicant.certificateCopy
+            Course: applicant.Course,surname: applicant.surname,title:applicant.title,certificateCopy: applicant.certificateCopy
         })
     } catch(err){
         console.log(err)
